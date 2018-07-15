@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Writeup - Nibbles
-tags: [Writeup, CTF, HackTheBox]
+category: Writeup
+tags: [CTF, HackTheBox]
 ---
 Nibbles est une machine provenant de la plateforme [Hack The Box](https://www.hackthebox.eu). Celle-ci est indiquée comme étant la plus simple du lab avec une note de difficultée s’élevant à 3.6/10, et rapportant 20 points.
 L'adresse IP de la machine est 10.10.10.75.
