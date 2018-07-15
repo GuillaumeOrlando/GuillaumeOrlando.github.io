@@ -51,6 +51,8 @@ Maintenant qu’un accès aux pages d’administrations du CMS sont ouvertes, ch
 Il ne me reste plus qu'a déployer un listener netcat en accord avec mon reverse shell pour obtenir un terminal utilisateur sur la machine cible !
 > nc -lvvp 1234
 
+un shell tournant avec les privilèges du compte utilisateur 'nibbler' s'ouvre ainsi ç moi.
+
 ## Escalation de privilège
 Le répertoire courant de l’utilisateur nibbler contient une archive “personal.zip”. En dézippant celle-ci, un script se présente : ‘monitor.sh’. Ce script semble permettre de monitorer l’état de santé de la machine.
 Avant de continuer, je décide de faire spawn un shell intercatif :
