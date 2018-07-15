@@ -47,7 +47,7 @@ Après de très longues minutes d'épluchures minutieuse des nouveaux fichiers �
 ## Exploitation
 De ce fait, il m’est possible de retourner sur la page d’authentification et de commencer à essayer des mots de passes par défauts. Après seulement quelques essais, il s’avère que le mot de passe correspondant était simplement “nibbles”.
 
-Maintenant qu’un accès aux pages d’administrations du CMS sont ouvertes, cherchons un endroit ou il serait possible d’uploader un shell. Ce sera finalement dans le plugin “My images”, d'où je vais uploader un reverse shell en PHP, d'après les instructions de cet article[https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html](https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html).
+Maintenant qu’un accès aux pages d’administrations du CMS sont ouvertes, cherchons un endroit ou il serait possible d’uploader un shell. Ce sera finalement dans le plugin “My images”, d'où je vais uploader un reverse shell en PHP, d'après les instructions de cet [article](https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html).
 Il ne me reste plus qu'a déployer un listener netcat en accord avec mon reverse shell pour obtenir un terminal utilisateur sur la machine cible !
 > nc -lvvp 1234
 
