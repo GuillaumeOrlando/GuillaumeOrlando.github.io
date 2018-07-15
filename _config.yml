@@ -1,14 +1,14 @@
 # Site settings
 title: HomardBoy | Blog
 description: "Research blog "
-url: "http://homardboy.github.io"
+url: "https://homardboy.github.io/"
 author:
   name: "HomardBoy"
   email: "homardboy@idontexist.com"
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl: /
+baseurl: https://homardboy.github.io/
 markdown: kramdown
 source: .
 destination: ./_site
