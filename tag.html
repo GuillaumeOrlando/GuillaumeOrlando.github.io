@@ -19,7 +19,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
 =======================
 The following part removes dulpicated tags and invalid tags like blank tag.
 =======================
-{% endcomment %}
+
 {% assign tags = "" %}
 {% for tag in rawtags %}
 	{% if tag != "" %}
@@ -31,3 +31,4 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 		{% endunless %}
 	{% endif %}
 {% endfor %}
+{% endcomment %}
