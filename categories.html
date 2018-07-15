@@ -8,6 +8,11 @@ title: Categories
 	{% for writeups in site.posts %}
 	<li>
 		<a href="">{{writeups.categories}}</a>
+		{% for elements in writeups.categories %}
+		<li>
+			<a href="">{{elements.title}}</a>
+		</li>
+		{% endfor %}
 	</li>
 	{% endfor %}
 </ul>
