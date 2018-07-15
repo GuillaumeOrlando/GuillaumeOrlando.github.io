@@ -1,9 +1,9 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
+title: HomardBoy | Blog
+description: "Research blog"
 url: "http://homardboy.github.io"
 author:
-  name: "Jacopo Rabolini"
+  name: "HomardBoy"
   email: "hello@jacoporabolini.com"
   url: "http://www.jacoporabolini.com"
 
