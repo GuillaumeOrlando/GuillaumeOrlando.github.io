@@ -38,6 +38,7 @@ Le contenu du CMS n’est pas très important, et aucunes informations ou noms d
 Je réussi ainsi à obtenir la page d’authentification par défaut : admin.php !
 Le scanner nikto me remonte quand à lui la présence d’un dossier /admin/.
 La page d’authentification est des plus classiques :
+
 ![nibbles-admin-login](/img/nibbles/login.png){:class="img-responsive"}
 
 Le répertoire admin contient quand à lui des tonnes de dossiers et de fichiers relatifs au CMS. En cherchant à interagir avec ces fichiers, je me rend compte que des droits administrateur sont requis.
@@ -59,7 +60,6 @@ Le répertoire courant de l’utilisateur nibbler contient une archive “person
 Avant de continuer, je décide de faire spawn un shell intercatif :
 > which python3                           
 > python3 -c 'import pty; pty.spawn("/bin/bash")'
-
 
 Après avoir fait spawn un shell plus présentable via python 3, je décide d’énumérer le contenu de la machine. C’est alors que l’environnement de travail se reset de manière automatique, me laissant le message suivant :
 {% highlight bash linenos %}
