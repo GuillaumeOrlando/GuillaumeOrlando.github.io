@@ -3,32 +3,12 @@ layout: default
 title: Categories
 ---
 
-{% comment %}
-=======================
-The following part extracts all the categories from your posts and sort tags, so that you do not need to manually collect your tags to a place.
-=======================
-{% endcomment %}
-{% assign rawcategories = "" %}
-{% for post in site.posts %}
-	{% assign ccategories = post.categories | join:'|' | append:'|' %}
-	{% assign rawcategories = rawcategories | append:ccategories %}
-{% endfor %}
-{% assign rawcategories = rawcategories | split:'|' | sort %}
-
-{% comment %}
-=======================
-The following part removes dulpicated categories and invalid tags like blank tag.
-=======================
-
-{% assign categories = "" %}
-{% for categorie in rawcategories %}
-	{% if categorie != "" %}
-		{% if categories == "" %}
-			{% assign categories = categorie | split:'|' %}
-		{% endif %}
-		{% unless categories contains categorie %}
-			{% assign categories = categories | join:'|' | append:'|' | append:categorie | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
-{% endcomment %}
+<h1> Writeups</h1>
+<ul>
+	{% for writeups in site.categories.writeups %}
+	<li>
+		<a href="">{{writeups.title}}</a>
+		<p>{{writeups.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
