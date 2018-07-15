@@ -5,10 +5,10 @@ title: Categories
 
 <h1> Writeups</h1>
 <ul>
-	{% for writeup in site.posts %}
+	{% for writeups in site.categories.writeup %}
 	<li>
-		<a href="">{{writeup.title}}</a>
-		<p>{{writeup.meta}}</p>
+		<a href="">{{writeups.title}}</a>
+		<p>{{writeups.meta}}</p>
 	</li>
 	{% endfor %}
 </ul>
