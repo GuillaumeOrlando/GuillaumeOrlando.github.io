@@ -8,7 +8,7 @@ author:
   url: "http://www.jacoporabolini.com"
 
 # Build settings
-baseurl: https://homardboy.github.io/
+baseurl: /
 markdown: kramdown
 source: .
 destination: ./_site
