@@ -19,7 +19,7 @@ The following part extracts all the categories from your posts and sort tags, so
 =======================
 The following part removes dulpicated categories and invalid tags like blank tag.
 =======================
-{% endcomment %}
+
 {% assign categories = "" %}
 {% for categorie in rawcategories %}
 	{% if categorie != "" %}
@@ -31,3 +31,4 @@ The following part removes dulpicated categories and invalid tags like blank tag
 		{% endunless %}
 	{% endif %}
 {% endfor %}
+{% endcomment %}
