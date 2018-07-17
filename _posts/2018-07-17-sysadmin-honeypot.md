@@ -29,8 +29,7 @@ Pendant l’installation, plusieurs informations nous serons demandée. La premi
 
 Il sera ensuite demandé d’entrer une adresse mail superutilisateur et un mot de passe qui servira d’identifiant pour se connecter sur la plateforme.
 Les autres prompts concernent l’utilisation d’un serveur de messagerie pour envoyer automatiquement des alertes.
-Je n’ai pas décidé d’en renseigné un, mais les informations sont suffisamment claires pour le faire sans aide supplémentaire :
-![mhn-screen1](/img/mhn/infos.PNG){:class="img-responsive"}
+Je n’ai pas décidé d’en renseigné un, mais les informations sont suffisamment claires pour le faire sans aide supplémentaire.
 
 Enfin, il sera possible d’intégrer la solution Splunk et le stack ELK à notre projet. Puisque la machine serveur est relativement faible en terme de performance, je n’ai pas choisis d’installer et d’activer ces deux modules.
 
