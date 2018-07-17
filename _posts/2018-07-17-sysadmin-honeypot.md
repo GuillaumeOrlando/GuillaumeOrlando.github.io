@@ -63,7 +63,8 @@ Un numéro d’identification unique (uuid) nous sera généré. Attention à bi
 Pour terminer de déclarer notre nouvelle source, il sera nécessaire d’ouvrir un shell sur le serveur MHN, puis de déclarer les variables suivantes :
 > IDENT=<UUID noté plus tôt>              
 > SECRET=<Mot de passe aléatoire>                
-> PUBLISH_CHANNELS="dionaea.connections,dionaea.capture,mwbinary.dionaea.sensorunique,dionaea.captures,dionaea.capture.anon"              
+> PUBLISH_CHANNELS="dionaea.connections,dionaea.capture,mwbinary
+>.dionaea.sensorunique,dionaea.captures,dionaea.capture.anon"              
 > SUBSCRIBE_CHANNELS=""
 
 Il est désormais possible de terminer l’enregistrement de la sonde en lançant le script MHN dédié :
