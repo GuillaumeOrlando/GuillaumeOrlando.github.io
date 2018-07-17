@@ -95,7 +95,7 @@ Il sera ensuite nécessaire de mettre à jour les sources avant d’installer di
 > sudo apt-get install dionaea
 
 Afin de capturer des samples de malwares, il est nécessaire de configurer un vecteur d’attaque sur notre honeypot. Dans le cas présent, ce sera un service SMB vulnérable. Pour activer ce service, il faudra éditer le fichier smb.yaml situé sous /opt/dionaea/etc/dionaea/services-enabled/ :
-{% highlight yaml linenos %}
+{% highlight html linenos %}
 - name: smb
   config:
 
@@ -129,7 +129,7 @@ Enfin, pour activer le service, nous allons copier ce fichier de configuration d
 Pour terminer, il faudra modifier le fichier de configuration de notre honeypot de façon à ce que celui-ci remonte les informations sur notre serveur MHN central :
 > nano ihandlers-enabled/hpfeeds.yaml
 
-{% highlight yaml linenos %}
+{% highlight html linenos %}
 - name: hpfeeds
   config:
     server: "IP du serveur MHN"
