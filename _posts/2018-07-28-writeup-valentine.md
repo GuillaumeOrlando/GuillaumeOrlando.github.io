@@ -89,4 +89,4 @@ Et me permet d’obtenir très simplement un compte root sur la machine :
 ![valentine-root](/img/valentine/root.png){:class="img-responsive"}
 
 Il est désormais possible de chercher le flag de validation pour terminer la machine.
-Je n’ai pas été un grand fan de cette machine, même si celle-ci à eu le mérite de me faire jouer avec des vulnérabilités systèmes bien connus sur lesquelles je n'avais encore jamais tenté d’exploits.2018-07-28-writeup-valentine.md
+Je n’ai pas été un grand fan de cette machine, même si celle-ci à eu le mérite de me faire jouer avec des vulnérabilités systèmes bien connus sur lesquelles je n'avais encore jamais tenté d’exploits.
