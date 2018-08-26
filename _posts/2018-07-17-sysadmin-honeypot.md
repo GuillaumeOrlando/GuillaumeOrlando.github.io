@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sysadmin - Déploiement de Honeypots
+title: Déploiement de Honeypots
 categories: Sysadmin
 ---
 Un honeypot est une ressource informatique volontairement vulnérable destinée à attirer des adversaires malveillants. Dans le cas présent, l’infrastructure servira à collecter des échantillons de malwares actuellement en circulation et à observer les différentes tentatives d’attaques les plus utilisées. Un serveur principal servira de console de supervision pour deux honeypots. Le premier sera un honeypot tournant avec l’IDS Snort pour détecter les attaques réseaux bas niveaux. Le second sera une plateforme vulnérable aux exploits du service Windows SMB afin de recueil le maximum de codes malveillants. Enfin, en local, une machine d’analyse de malwares sera déployées pour observer les échantillons recueillis.
