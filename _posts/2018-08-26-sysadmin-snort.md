@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Déploiement d'un NIDS Snort au sein d'un SIEM Prelude
+title: NIDS Snort au sein d'un SIEM Prelude
 categories: Sysadmin
 ---
 Snort est un NIDS (Network Intrusion Detection System) open-source, permettant de filtrer et d’appliquer des règles sur l’ensemble du trafic bas niveau d’un réseau. De nombreuses règles sont disponibles gratuitement, et il est possible de facilement en créer de nouvelles de toutes pièces. Ce document décrit les différentes étapes d’installation et de configuration d’une sonde Snort capable de s’intégrer dans l'environnement d’un SIEM Prelude. Les logs générés par le NIDS Snort seront stockés hors de la machine, et les alertes de sécurité vont être remontées au format IDMEF à destination du Prelude-Manager, capable d’interpréter correctement ce format. La machine cible est une RedHat7.
