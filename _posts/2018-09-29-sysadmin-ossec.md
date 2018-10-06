@@ -3,7 +3,7 @@ layout: post
 title: HIDS Ossec
 categories: Sysadmin
 ---
-OSSEC est un HIDS compatible Unix et Windows, permettant notamment d’effectuer un contrôle d’intégrités sur des fichiers et des dossiers et un contrôle de permissions du filesystem.
+OSSEC est un HIDS compatible Unix et Windows, permettant notamment d’effectuer un contrôle d’intégrités sur des fichiers/dossiers et un contrôle de permissions du filesystem.
 OSSEC fonctionne en architecture Client - Serveur. Le Serveur sera ici une machine RedHat 6. Les clients seront émulés par un parc de machines virtuelles RedHat 6 et Windows.
 ## Architecture OSSEC local
 Ce premier POC comprendra une unique machine, sous RedHat 6, faisant office de serveur et de client. Ce mode d’implémentation est qualifiée d’installation “local” par OSSEC.
