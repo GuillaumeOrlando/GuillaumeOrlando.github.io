@@ -210,6 +210,7 @@ code {
 .content ul, .content ol {
   line-height: 1.5em; /* 24px/16px */
   padding-left: 1.5em;
+  text-align: justify;
   @media (min-width: 940px) {
     line-height: 1.33334em; /* 24px/18px */
   }
