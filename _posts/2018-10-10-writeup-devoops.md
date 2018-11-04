@@ -4,10 +4,9 @@ title: Writeup - DevOops
 categories: Writeup
 ---
 
-## Introduction
+### Introduction
 DevOops est une machine vulnérable proposée par Hack The Box. La machine est accessible à l’adresse IP 10.10.10.91.
 
-## Obtention d’un shell low privilège
 ### Scan
 
 Je commence par scanner l’ensemble des ports TCP et UDP de la machine avec masscan :
@@ -59,7 +58,7 @@ Je m’empresse de récupérer la clé privée en craftant un nouveau fichier XM
 Il ne me reste plus qu'à copier-coller le contenu de la clé en local, de lui appliquer les bonnes permissions (chmod 600), et de me connecter avec :
 ![devoops-I](/img/devoops/I.PNG){:class="img-responsive"}
 
-## Escalation de privilège
+### Escalation de privilège
 Mon premier réflexe lors de l’obtention d’un compte low privilège consiste à observer l’historique des commandes disponible pour situer le contexte de l’utilisation de ce compte. Dans le cas présent, l’historique est plein de surprises. De nombreux ‘git commit’ sont effectuées, et l’un d’eux semble des plus intéressants :
  ![devoops-J](/img/devoops/J.PNG){:class="img-responsive"}
 
