@@ -128,7 +128,7 @@
   }
   img {
   	max-height: 72px;
-  	margin: initial;
+  	margin: 0 auto;
   	display: block;
   }
   h1 {
@@ -187,8 +187,8 @@
 img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 24px;
+  margin: inherit;
+  margin-bottom: inherit;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
       -ms-border-radius: 4px;
