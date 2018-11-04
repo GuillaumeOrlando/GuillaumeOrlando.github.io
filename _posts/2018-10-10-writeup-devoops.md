@@ -5,7 +5,7 @@ categories: Writeup
 ---
 
 ### Introduction
-DevOops est une machine vulnérable proposée par Hack The Box. La machine est accessible à l’adresse IP 10.10.10.91.
+DevOops est une machine vulnérable proposée par Hack The Box, rapportant 30 points. La machine est accessible à l’adresse IP 10.10.10.91.
 
 ### Scan
 
