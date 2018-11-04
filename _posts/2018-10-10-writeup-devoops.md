@@ -9,7 +9,7 @@ DevOops est une machine vulnérable proposée par Hack The Box. La machine est a
 
 ### Scan
 
-Je commence par scanner l’ensemble des ports TCP et UDP de la machine avec masscan :
+Je commence par scanner l’ensemble des ports TCP et UDP de la machine avec masscan:
 > masscan -p1-65535,U:1,65535 10.10.10.91 --rate=500 -e tun0
 
 Deux ports sont ouverts : l’un qui semble être un service http sur le port 5000, et un service SSH sur le port 22.
