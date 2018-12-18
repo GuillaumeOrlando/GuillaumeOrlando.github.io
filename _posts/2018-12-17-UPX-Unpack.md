@@ -24,7 +24,7 @@ Le but sera ici de trouver le point d’entrée (entrypoint ou OEP) du malware. 
 ![image-left](/img/PMA/unpack/UPX/E.PNG)
 Beaucoup de packers peuvent être manuellement contournés avec cette même méthode (et non seulement UPX, mais aussi ASPacker, NSPacker et de très nombreux autres). Le but sera ici de cherche un saut (instruction “JMP” correspondant à l’opcode E9) qui mènera vers une adresse mémoire distante. Ce saut nous mènera jusqu’à l’entrypoint du malware:
 ![image-left](/img/PMA/unpack/UPX/F.PNG)
-Puisqu’il peut être très fastidieux de chercher ce saut, il est aussi possible d’observer le registre ESP au lancement du programme. Ce registre contiendra l’adresse de retour du stub. A ce moment de l'exécution du packer, cela signifie que le déchiffrement / la décompression du malware est terminée, et que celui-ci est prêt à être exécuté. C’est à ce moment que nous allons intercepter le contenu en clair de ce dernier.
+Puisqu’il peut être très fastidieux de chercher ce saut, il est aussi possible d’observer le registre ESP au lancement du programme. Ce registre contiendra l’adresse de retour du stub. A ce moment de l'exécution du packer, cela signifie que le déchiffrement / la décompression du malware est terminée, et que celui-ci est prêt à être exécuté. C’est à ce moment que nous allons intercepter le contenu en clair.
 Un fois cette adresse identifiée, il faudra afficher la portion mémoire associée via l’option “Follow in Dump”:
 ![image-left](/img/PMA/unpack/UPX/G.PNG)
 Il ne reste plus qu'à placer un breakpoint dès que cette portion mémoire est utilisée:
@@ -33,13 +33,13 @@ En reprenant le flow d'exécution du binaire, le breakpoint est bien atteint jus
 ![image-left](/img/PMA/unpack/UPX/I.PNG)
 Il ne reste plus qu’à exécuter pas à pas les instructions restantes pour être emmené à l’OEP réel du malware déchiffré:
 ![image-left](/img/PMA/unpack/UPX/J.PNG)
-L’adresse de l’OEP est à noté soigneusement si le dump souhaite être fait manuellement. Ici, cette adresse est <0x00401190>.
+L’adresse de l’OEP est à noter soigneusement si le dump souhaite être fait manuellement. Ici, cette adresse est <0x00401190>.
 
 ### Dump du malware
-Tout comme la phase précédent, le dump du malware unpacké peut être fait automatiquement ou manuellement. L’inconvénient d’un dump manuel réside dans le fait que l’IAT (Import Address Table) doit être reconstruit à la main. Sans cette reconstruction, les adresse des fonctions ne vont plus coïncider avec celles appelés par le binaire, ce qui va empêcher l'exécution de celui-ci.
-Pour se faciliter la tâche, le plugin OllyDump peut être utilisé:
+Tout comme la phase précédent, le dump du malware unpacké peut être fait automatiquement ou manuellement. L’inconvénient d’un dump manuel réside dans le fait que l’IAT (Import Address Table) doit être reconstruit à la main. Sans cette reconstruction, les adresse des fonctions ne vont plus coïncider avec celles appelés par le binaire, ce qui va empêcher l'exécution du programme.
+Pour se faciliter la tâche, le plugin OllyDump est utilisé:
 ![image-left](/img/PMA/unpack/UPX/K.PNG)
-Le nouvel entrypoint doit être renseigné, avant de dumper le programme. Attention à bien activer le reconstruction de l’iAT avec la case “Rebuild Import”:
+Le nouvel entrypoint doit être renseigné, avant de dumper le programme. Attention à bien activer le reconstruction de l’IAT avec la case “Rebuild Import”:
 ![image-left](/img/PMA/unpack/UPX/L.PNG)
 Un fois ce dump enregistré, il ne reste qu'à confirmer que celui-ci est fonctionnel et exploitable.
 
