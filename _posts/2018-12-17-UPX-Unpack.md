@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Practical Malware Analysis - Lab 01x2
+title: Malware Generic Manual Unpacking 
 categories: Recherches
 ---
 
