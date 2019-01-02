@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writeup - Poison
-categories: [Writeup, testcat]
+categories: Writeup
 ---
 Poison est une machine boot2root disponible sur la plateforme HackTheBox. Celle-ci à une difficulté générale de 3.6 / 10, pour un total de 30 points.
 L'adresse IP de la machine est 10.10.10.84.
