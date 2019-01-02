@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Malware Manual Unpacking
-categories: Recherches
+categories: MalwareAnalysis
 ---
 
 UPX est un packer reconnu qui peut faire office de très bon entraînement à l'unpacking de malware : https://upx.github.io/. Le malware analysé sera ici au format PE, et l’aspect unpacking sera uniquement couvert.
