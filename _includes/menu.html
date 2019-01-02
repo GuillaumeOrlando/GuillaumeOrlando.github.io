@@ -1,19 +1,15 @@
 <nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
 	<div id="nav-list">
 		<a href="https://homardboy.github.io/">Home</a>
+		<a href="https://homardboy.github.io/categories">Catégories</a>
 
 		<div id="nav-list">
 		</div>
 		<center>
-		
 		<a href="{{ site.baseurl }}">Malware Analysis</a>
-			
 		<a href="{{ site.baseurl }}">Writeups</a>
-		
 		<a href="{{ site.baseurl }}">Sysadmin</a>
-		
 		<a href="{{ site.baseurl }}">Exploit Development</a>
-			
 		</center>
 		<!-- Nav pages -->
 	  {% for page in site.pages %}
