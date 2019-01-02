@@ -12,7 +12,7 @@ Puisque la plupart des packers modifient les sections du binaire, l’observatio
 Premièrement, les noms des sections est un bon indicateur de l’état du fichier. De plus, certains packers donnerons quelques informations via le nom des sections attribuées. Qu’il s’agisse directement du nom du packer, ou d’un nom permettant de remonter au packer, l’information reste très importante.
 Afin de confirmer la théorie, l’utilitaire PEiD peut être très utile. Celui-ci recherche des signatures de packers connus, permettant ainsi de rapidement identifier le packer utilisé:
 ![image-left](/img/PMA/unpack/UPX/B.PNG)
-Enfin, il est possible d’observer l’entropie du fichier analysé. L’entropie est une fonction de mesure de l’aléatoire et de désordre. Dans le cas présent, elle permet de mesure, sur une échelle de 0 à 8, la vraisemblabilité que le contenu du fichier soit chiffré ou obfusqué:
+Enfin, il est possible d’observer l’entropie du fichier analysé. L’entropie est une fonction de mesure de l’aléatoire et de désordre. Dans le cas présent, elle permet de mesurer sur une échelle de 0 à 8, la vraisemblabilité que le contenu du fichier soit chiffré ou obfusqué:
 ![image-left](/img/PMA/unpack/UPX/C.PNG)
 Le pic centrale avoisinant les 7,5 ne laisse aucun doutes: cette section du binaire est certainement compressée / chiffrée / obfusquée. A titre de comparaison, l’entropie d’un fichier non packé dispose d’une courbe similaire à celle-ci:
 ![image-left](/img/PMA/unpack/UPX/D.PNG)
