@@ -24,6 +24,19 @@
 
 #nav {
   @include nav-position(right);
+  left: 98%;
+  padding-left: 3.5%;
+  padding-top: 5%;
+  position: fixed;
+  background-color: #64708b;
+  top: 0Px;
+  bottom: 0;
+  right: -14rem;
+  color: #FDFDFD;
+  opacity: 0.80;
+  transition: all 0.3s ease-in;
+  z-index: 1;
+  text-align: center;
 }
 
 #nav-left {
