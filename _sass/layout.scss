@@ -48,6 +48,7 @@
 
 #nav.menu-open {
   @include open(-14rem);
+  width: 17%;
 }
 
 #nav-left.menu-open-left {
