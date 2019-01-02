@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RITSEC CTF 2018
-categories: CTF
+categories: Writeup
 ---
 ## Space Force
 ![devoops-A](/img/ritsecctf/L-1.PNG){:class="img-responsive"}
