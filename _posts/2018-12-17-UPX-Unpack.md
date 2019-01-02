@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Malware Generic Manual Unpacking
+title: Malware Manual Unpacking
 categories: Recherches
 ---
 
