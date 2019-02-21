@@ -1,11 +1,11 @@
 # Site settings
-title: HomardBoy | Blog
+title: Infosec Blog
 description: "Research blog"
-url: "https://homardboy.github.io/"
+url: "https://guillaumeorlando.github.io/"
 author:
-  name: "HomardBoy"
-  email: "homardboy@jcl.com"
-  url: "homardboy.github.io"
+  name: "Guillaume Orlando"
+  email: "guillaume.orlando@protonmail.com"
+  url: "guillaumeorlando.github.io"
 
 # Build settings
 baseurl: /
@@ -30,7 +30,7 @@ gems:
   - jekyll-paginate
 
 # Custom variable
-version: "1.0.2"
+version: "2.1"
 
 # Options
 custom_header: false
