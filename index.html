@@ -15,3 +15,14 @@ layout: default
     {% endfor %}
 
 </ul>
+<ul>
+{% assign posts=site.posts | where:"lang", "fr" %}
+{% for default in posts %}
+  {% assign translation = site.posts | where:"ref", default.ref | where:"lang", "en" %}
+  {% if translation[0] %}
+    <li><a href="{{ translation[0].url }}">{{ translation[0].title }}</a></li>
+  {% else %}
+    <li><a href="{{ default.url }}">{{ default.title }}</a> [en] </li>
+  {% endif %}
+{% endfor %}
+</ul>
