@@ -6,9 +6,9 @@ categories: MalwareAnalysis
 
 Cette série d'articles couvre différents exercices de la plateforme [malware-traffic-analysis](http://malware-traffic-analysis.net/). Ceux-ci nécessitent d'analyser un flux réseaux .pcap englobés un contexte précis, souvent en lien avec l'infection d'une machine par un malware.
 
-* 2016-10-15 - TRAFFIC ANALYSIS EXERCISE - CRYBABY BUSINESSMAN
-* 2018-07-15 - TRAFFIC ANALYSIS EXERCISE - OH NOES! TORRENTZ ON OUR NETWORK!
-* 2018-02-13 - TRAFFIC ANALYSIS EXERCISE - OFFICE WORK
+* *2016-10-15 - TRAFFIC ANALYSIS EXERCISE - CRYBABY BUSINESSMAN*
+* *2018-07-15 - TRAFFIC ANALYSIS EXERCISE - OH NOES! TORRENTZ ON OUR NETWORK!*
+* *2018-02-13 - TRAFFIC ANALYSIS EXERCISE - OFFICE WORK*
 
 ### CRYBABY BUSINESSMAN (2016-10-15)
 
