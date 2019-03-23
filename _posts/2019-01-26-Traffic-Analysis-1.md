@@ -73,15 +73,52 @@ Instructions:
 ![picture](/img/traffic-analysis/2/1.PNG){:class="img-responsive"}
 
 
-IP: 10.0.0.201
-MAC: 00:16:17:18:66:c8 (MSI)
-Computer Name: BLANCO-DESKTOP
+IP: _10.0.0.201_
+MAC: _00:16:17:18:66:c8 (MSI)_
+Machine: _BLANCO-DESKTOP_
 ![picture](/img/traffic-analysis/2/2.PNG){:class="img-responsive"}
 
 
-LDAP Account: elmer.blanco
+Compte LDAP: _elmer.blanco_
 ![picture](/img/traffic-analysis/2/3.PNG){:class="img-responsive"}
 
 
-Windows version: Windows 10 64 bits (from http request from the blanco’s computer).
+Version Windows: _Windows 10 64 bits_ (d'après la requête http émise depuis la machine de blancko).
 ![picture](/img/traffic-analysis/2/4.PNG){:class="img-responsive"}
+
+
+L'utilisateur à téléchargé le film “betty boop rhythm on the reservation.avi” depuis l'URL _http://publicdomaintorrents.info/nshowmovie.html?movieid=513_
+![picture](/img/traffic-analysis/2/5.PNG){:class="img-responsive"}
+
+
+la requête web en question est la suivante:
+![picture](/img/traffic-analysis/2/6.PNG){:class="img-responsive"}
+
+
+Il est possible d'obtenir le protocole torrent utilisé en observant les requêtes faites juste après le téléchargement du fichier torrent:
+![picture](/img/traffic-analysis/2/7.PNG){:class="img-responsive"}
+
+
+Un façon de vérifier les informations obtenus est de chercher spécifiquement pour des paquets BitTorrent, sur le port 6881:
+![picture](/img/traffic-analysis/2/8.PNG){:class="img-responsive"}
+
+
+Le client BitTorrent utilisé est Deluge 1.3.15, comme le montre la requête suivante:
+![picture](/img/traffic-analysis/2/9.PNG){:class="img-responsive"}
+
+
+Enfin, le fichier partagé dispose d'un hash suivant:
+![picture](/img/traffic-analysis/2/10.PNG){:class="img-responsive"}
+
+
+Après une rapide recherche, il semblerait que ce soit le hash d'un ISO Ubuntu:
+![picture](/img/traffic-analysis/2/11.PNG){:class="img-responsive"}
+
+La situation peut être résumé par la schéma suivante:
+![picture](/img/traffic-analysis/2/12.PNG){:class="img-responsive"}
+
+### OFFICE WORK (2018-02-13)
+
+[(http://malware-traffic-analysis.net/2018/07/15/index.html]((http://malware-traffic-analysis.net/2018/07/15/index.html)
+Instructions:
+![picture](/img/traffic-analysis/2/1.PNG){:class="img-responsive"}
