@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: waiting
 title: Malware traffic analysis 0x01
 categories: MalwareAnalysis
 ---
