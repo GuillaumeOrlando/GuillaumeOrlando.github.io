@@ -5,7 +5,7 @@ url: "https://guillaumeorlando.github.io/"
 author:
   name: "Guillaume Orlando"
   email: "guillaume.orlando@protonmail.com"
-  url: "guillaumeorlando.github.io"
+  url: "guillaumeorlando.github.io "
 
 # Build settings
 baseurl: /
@@ -30,7 +30,7 @@ gems:
   - jekyll-paginate
 
 # Custom variable
-version: "2.1.1"
+version: "2.1.2"
 
 # Options
 custom_header: false
