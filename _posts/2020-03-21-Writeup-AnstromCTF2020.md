@@ -180,7 +180,7 @@ conn.sendline(payload)
 conn.interactive()
 ```
 
-A l'exécution, un beau shell apparait, permettant de récupérer le flag:
+A l'exécution, notre belle fonction apparait, permettant de récupérer le flag:
 
 ![devoops-E](/img/Angstrom2020/Canary/canary7.png){:class="img-responsive"}
 
