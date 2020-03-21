@@ -44,7 +44,7 @@ Bien évidemment, le binaire est en segfault lorsque la chaine entrée est trop 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary5.png){:class="img-responsive"}
 
 Essayons de déterminer à partir de combien de bytes la valeur du pointeur d'instruction RIP est écrasée par notre chaine.
-Pour ce faire, j'utilise ici une suite de DeBruijn, génerée avec l'outil _cyclic_ de la librairie python _PwnTools_:
+Pour ce faire, j'utilise ici une suite de [DeBruijn](https://en.wikipedia.org/wiki/De_Bruijn_sequence), génerée avec l'outil _cyclic_ de la librairie python _PwnTools_:
 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary6.png){:class="img-responsive"}
 
