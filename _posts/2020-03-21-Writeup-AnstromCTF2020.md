@@ -17,7 +17,7 @@ categories: CTF
 * Autorev, Assemble! (_Reverse - 125 points_)
 
 ### No_Canary (Pwn - 50 points)
-Ce premier challenge de la catégorie Pwn est très explicite, puisque le titre du challenge indique qu'il s'agira d'un exploitation sans [stack-canary](https://en.wikipedia.org/wiki/Stack_buffer_overflow), d'un simple buffer overflow.
+Ce premier challenge de la catégorie Pwn est très explicite, puisque le titre du challenge indique qu'il s'agira d'un exploitation sans [stack-canary](https://en.wikipedia.org/wiki/Stack_buffer_overflow#Stack_canaries), d'un simple buffer overflow.
 Une vérification des sécurités du binaire confirme la théorie, il s'agit d'un BufferOverflow classique, sans aucune protection:
 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary0.png){:class="img-responsive"}
@@ -44,7 +44,7 @@ Bien évidemment, le binaire est en segfault lorsque la chaine entrée est trop 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary5.png){:class="img-responsive"}
 
 Essayons de déterminer à partir de combien de bytes la valeur du pointeur d'instruction RIP est écrasée par notre chaine.
-Pour ce faire, j'utilise ici une suite de [DeBruijn](https://en.wikipedia.org/wiki/De_Bruijn_sequence), génerée avec l'outil _cyclic_ de la librairie python _PwnTools_:
+Pour ce faire, j'utilise ici une suite de [DeBruijn](https://en.wikipedia.org/wiki/De_Bruijn_sequence), génerée avec l'outil [cyclic](https://docs.pwntools.com/en/stable/util/cyclic.html) de la librairie python [PwnTools](https://github.com/Gallopsled/pwntools):
 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary6.png){:class="img-responsive"}
 
@@ -78,18 +78,18 @@ actf{that_gosh_darn_canary_got_me_pwned!}
 ```
 
 ### Canary (Pwn - 70 points)
-Il semblerait que ce challenge soit identique au précédent, mais avec un stack-canary ajouté:
+Il semblerait que ce challenge soit identique au précédent, mais avec un [stack-canary](https://en.wikipedia.org/wiki/Stack_buffer_overflow#Stack_canaries) ajouté:
 
 ![devoops-E](/img/Angstrom2020/Canary/canary0.png){:class="img-responsive"}
 
 Puisque le binaire est en 64 bits, il est impossible de le bruteforce entièrement.
 Il ne reste que deux options: un bruteforce partiel du canary avec un leak partiel, ou un leak complet.
 
-En lançant le programme pour déterminer son fonctionnement, on remarque que cette fois-ci, le programme récupère deux inputs utilisateur et possède bien un stack-canary:
+En lançant le programme pour déterminer son fonctionnement, on remarque que cette fois-ci, le programme récupère deux inputs utilisateur et possède bien un [stack-canary](https://en.wikipedia.org/wiki/Stack_buffer_overflow#Stack_canaries):
 
 ![devoops-E](/img/Angstrom2020/Canary/canary1.png){:class="img-responsive"}
 
-Tout semble setup pour un leak, essayons une format-string:
+Tout semble setup pour un leak, essayons une [format-string](https://www.exploit-db.com/docs/english/28476-linux-format-string-exploitation.pdf):
 
 ![devoops-E](/img/Angstrom2020/Canary/canary2.png){:class="img-responsive"}
 
@@ -226,7 +226,7 @@ Le deuxième argument est ici multiplié par 100:
 mov     eax, [rbp+var_A8]
 imul    ecx, eax, 0x64
 ```
-Le premier est shifté vers la gauche par 2 (donc multiplié par 10) :
+Le premier est [shifté](https://math.stackexchange.com/questions/1610667/why-shifting-left-1-bit-is-the-same-as-multiply-the-number-by-2) vers la gauche par 2 (donc multiplié par 10) :
 ```python
 mov     edx, [rbp+var_AC]
 mov     eax, edx
@@ -314,7 +314,7 @@ readelf: Error: no .dynamic section in the dynamic segment
 
 Le problème semble venir des sections du binaire.
 
-En se renseignant sur la composition d'un header ELF, et puisque toutes les sections de binaire semblent corrompues, il est fort probable que la valeur de la "_section header table address_" (offset 30) soit simplement invalide.
+En se renseignant sur la composition d'un header ELF, et puisque toutes les sections de binaire semblent corrompues, il est fort probable que la valeur de la "[section header table address](https://docs.oracle.com/cd/E19455-01/806-3773/elf-2/index.html)" (offset 30) soit simplement invalide.
 
 Pour en être sûr, il s'uffit de comparer un header valide avec le nôtre (j'utilise ici le binaire fournis avec le challenge précédent):
 ```asm
@@ -379,7 +379,7 @@ Après modification du binaire avec un éditeur hexadécimal, la première parti
 Nous pouvons désormais ouvrir le programme dans un désassembleur.
 
 Pour atteindre le flag, il sera nécessaire de patcher quelques variables à la main.
-Une comparaison est faite entre une variable stockée quelque part dans le binaire est _0x1337BEEF_ :
+Une comparaison est faite entre une variable stockée quelque part dans le binaire et _0x1337BEEF_ :
 
 ![devoops-E](/img/Angstrom2020/patch/pat0.png){:class="img-responsive"}
 
@@ -481,7 +481,7 @@ for main_op in main.split("\n"):
         flag = resolve_equa(func_content, func_name, flag)
 
         nb_call += 1
-# Small cheat, i guess the two missing letters
+# Small cheat, i guessed the two missing letters
 flag[0] = "b"
 flag[128] = "_"
 print("[+] Found a total of " + str(nb_call) + " functions to reverse")
