@@ -493,5 +493,9 @@ Et le moment tant attendu:
 ```asm
 [root@Arch Patcherman]# ./auto_reverse.py
 [+] Found a total of 200 functions to reverse
-Flag: blockchain big data solutions now with added machine learning. Enjoy! I sincerely hope you actf{wr0t3_4_pr0gr4m_t0_h3lp_y0u_w1th_th1s_df93171eb49e21a3a436e186bc68a5b2d8Noneinstead of doing it by hand.
+Flag: blockchain big data solutions now with added machine learning. Enjoy! I sincerely hope you actf{wr0t3_4_pr0gr4m_t0_h3lp_y0u_w1th_th1s_df93171eb49e21a3a436e186bc68a5b2d8} instead of doing it by hand.
+```
+
+```bash
+actf{wr0t3_4_pr0gr4m_t0_h3lp_y0u_w1th_th1s_df93171eb49e21a3a436e186bc68a5b2d8}
 ```
