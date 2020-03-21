@@ -3,6 +3,9 @@ layout: post
 title: ångstromCTF 2020
 categories: CTF
 ---
+
+![devoops-E](/img/Angstrom2020/banner.PNG){:class="img-responsive"}
+
 ### Sommaire
 
 * No_Canary (_Pwn - 50 points_)
