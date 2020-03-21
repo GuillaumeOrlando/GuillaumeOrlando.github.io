@@ -265,6 +265,8 @@ actf{th3y_gr0w_up_s0_f4st}
 ```
 
 ### Patcherman (_Reverse - 100 points_)
+![devoops-E](/img/Angstrom2020/patch/path_001.png){:class="img-responsive"}
+
 Pour ce challenge, nous sommes en présence d'un exécutable linux malformé:
 ```ctf
 Oh no! We were gonna make this an easy challenge where you just had to run the binary and it gave you the flag, but then clam came along under the name of "The Patcherman" and edited the binary! I think he also touched some bytes in the header to throw off disassemblers.
@@ -397,6 +399,8 @@ actf{p4tch3rm4n_15_n0_m0r3}
 ```
 
 ### Autorev, Assemble! (_Reverse - 125 points_)
+![devoops-E](/img/Angstrom2020/win/auto_00.png){:class="img-responsive"}
+
 Le but est ici d'automatiser la résolution du crackme.
 Le code suivant résume toutes les opérations à effectuer et le mindset avec lequel j'ai résolu ce challenge:
 
