@@ -22,7 +22,7 @@ Une vérification des sécurités du binaire confirme la théorie, il s'agit d'u
 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary0.png){:class="img-responsive"}
 
-Le binaire possède le bit SUID et exécute des instructions avec un compte privilégié?
+Le binaire possède le bit SUID et exécute des instructions avec un compte privilégié:
 
 L'objectif est ici d'appeler la fonction '_flag_', en détournant le flow d'exécution du programme.
 Cette fonction ouvre un shell sur la machine:
