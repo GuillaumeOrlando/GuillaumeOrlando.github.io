@@ -17,7 +17,7 @@ categories: CTF
 * Autorev, Assemble! (_Reverse - 125 points_)
 
 ### No_Canary (Pwn - 50 points)
-Ce premier challenge de la catégorie Pwn est très explicite, puisque le titre du challenge indique qu'il s'agira d'un exploitation sans stack-canary, d'un simple buffer overflow.
+Ce premier challenge de la catégorie Pwn est très explicite, puisque le titre du challenge indique qu'il s'agira d'un exploitation sans [stack-canary](https://en.wikipedia.org/wiki/Stack_buffer_overflow), d'un simple buffer overflow.
 Une vérification des sécurités du binaire confirme la théorie, il s'agit d'un BufferOverflow classique, sans aucune protection:
 
 ![devoops-E](/img/Angstrom2020/No_Canary/ncanary0.png){:class="img-responsive"}
