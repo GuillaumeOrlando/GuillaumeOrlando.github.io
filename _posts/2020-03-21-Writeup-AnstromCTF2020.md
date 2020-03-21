@@ -385,7 +385,7 @@ Une comparaison est faite entre une variable stockée quelque part dans le binai
 
 Cette variable ne correpsondant pas, il faudra la patcher:
 
-![devoops-E](/img/Angstrom2020/patch/pat1.png){:class="img-responsive"}
+![devoops-E](/img/Angstrom2020/patch/pat2.png){:class="img-responsive"}
 
 Puisque le patern est reconnaissable, il suffira de chercher l'offset de la variable via la commande
 ```asm
